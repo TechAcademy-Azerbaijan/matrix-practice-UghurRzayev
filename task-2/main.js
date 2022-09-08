@@ -12,8 +12,11 @@ let c = 2;
 
 for (let i = 0; i < r; i++) {
     const element = matrix[i];
-    for (let j = 0; j < c; j++) {
+    for (let j = 0; j < c-1; j++) {
         const element2 = element[j];
-        console.log(element2);
+        for (let b = 1; b < c; b++) {
+            const element3 = element[b];
+            console.log(`${element2} ${element3}`);
+        }
     }
 }
